@@ -178,7 +178,6 @@ input[type="number"]::-webkit-inner-spin-button {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 1px black solid;
     }
 
     .section-article-nota:nth-child(2) {
