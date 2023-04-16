@@ -24,6 +24,7 @@ function calcularNotas() {
       situacaoFinalID.innerHTML = "Aprovado";
     } else {
       if (somaDasAtv >= 6.5 && somaDasAtv <= 6.9) {
+        alert("Alunos com Nota Final 6,5 a 6,9 terão NF arredondada para 7!")
         notaFinalID.innerHTML = "7";
         situacaoFinalID.innerHTML = "Aprovado";
       } else {
@@ -49,10 +50,12 @@ function calcularNotas() {
     }
   } catch (error) {
     alert(error.message);
-    
+    refazerCode()
+  
   }
 }
 
 function refazerCode() {
-
+  document.querySelector("#situacaofinal").innerHTML = ""
+  document.querySelector("#notafinal").innerHTML = ""
 }
