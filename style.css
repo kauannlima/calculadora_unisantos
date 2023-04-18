@@ -3,12 +3,13 @@ body {
     border: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #eceff4;
+    color: black;
 }
 
 input {
     border-radius: .3125em;
-    border: .03125em solid block;
-
+    border: .03125em solid #ECEFF4;
 }
 
 input::placeholder {
@@ -24,7 +25,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .top-header {
     width: 100%;
-    background-color: #49bf9d;
+    background-color: #2e3440;
     text-align: center;
     font-size: 1.5em;
     color: white;
@@ -33,7 +34,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .section {
     border-radius: .3125em;
-    border: .1875em solid #49bf9d;
     box-sizing: border-box;
     width: 90%;
     margin: 1.3em auto;
@@ -82,8 +82,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .section-article button {
-    background-color: #49bf9d;
-    border: .1875em solid #49bf9d;
+    background-color: #2e3440;
+    border: .1875em solid #2e3440;
     margin: .1875em 0;
     text-decoration: none;
     color: white;
@@ -97,12 +97,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .section-article button:hover {
-    background-color: #6ad1b4;
+    background-color: #3b4252;
     border-color: transparent;
 }
-
-
-
 
 .section-article-pi {
     color: #777;
@@ -121,7 +118,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .article-final {
-    background-color: #49bf9d;
+    background-color: #2e3440;
     text-align: center;
     margin: 1.1em auto;
     width: 90%;
@@ -152,7 +149,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
     .section {
         border-radius: .3125em;
-        border: .1875em solid #49bf9d;
         box-sizing: border-box;
         width: 90%;
     }
@@ -168,6 +164,7 @@ input[type="number"]::-webkit-inner-spin-button {
     .section-header #nota1, .section-header #nota2, .section-header #nota3 {
         width: 90%;
         margin: 0 auto;
+        border: none;
     }
 
     .section-article-nota {
@@ -193,7 +190,6 @@ input[type="number"]::-webkit-inner-spin-button {
         width: 30%;
         margin: 0 auto 1em;
         padding: .35em .75em;
-        border: 1px black solid;
 
     }
 
