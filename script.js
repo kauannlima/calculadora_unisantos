@@ -13,7 +13,10 @@ function calcularNotas() {
     if (nota1 > 3 || nota2 > 3 || notaAp > 4) {
       throw Error("Digite um valor dentro da nota máxima");
     }
-    if (isNaN(nota1) || isNaN(nota2) || isNaN(notaAp)) {
+    else if (nota1 < 0 || nota2 < 0 || notaAp < 0) {
+      throw Error("Digite um valor dentro da nota minima");
+    }
+    else if (isNaN(nota1) || isNaN(nota2) || isNaN(notaAp)) {
       throw Error("Digite um valor válido.");
     }
 
