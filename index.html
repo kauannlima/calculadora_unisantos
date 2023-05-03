@@ -9,50 +9,50 @@
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 </head>
-
 <body>
 
     <header class="top-header">
         <t1><i class="fi fi-rr-graduation-cap"></i> <i>Calculadora Unisantos</i></t1>
     </header>
 
-
-
     <section class="section">
-
+        <div id="error-message"></div>
         <header class="section-header">
 
-            <article class="section-article-nota">
+
+            <div class="section-article-nota">
                 <label>Atividade Avaliativa 1
                     <input id="nota1" class="notas" type="number" min="0" max="3" placeholder="Digite sua nota">
                     <p>📝Valor: 3,0 pontos</p>
                 </label>
-            </article>
+            </div>
 
-            <article class="section-article-nota">
+            <div class="section-article-nota">
                 <label>Atividade Avaliativa 2
                     <input id="nota2" class="notas" type="number" min="0" max="3" placeholder="Digite sua nota">
                     <p>📝Valor: 3,0 pontos</p>
                 </label>
-            </article>
+            </div>
 
-            <article class="section-article-nota">
-                <label>Atividade Presencial
+            <div class="section-article-nota">
+                <label>Atividade Avaliativa 3
                     <input id="nota3" class="notas" type="number" min="0" max="4" placeholder="Digite sua nota">
                     <p>📝Valor: 4,0 pontos</p>
                 </label>
-            </article>
+            </div>
 
         </header>
 
         <article class="section-article">
-            <button class="button" onclick="calcularNotas()">Calcular</button>
+            <button class="button" id="calcular">Calcular</button>
+            <button class="button" id="limpar">Limpar</button>
         </article>
+        
 
         <article class="section-article-pi">
 
             <h1>Prova Institucional</h1>
-
+            <p>Nota Máxima: 10</p>
             <p>
                 <i>
                     "O aluno com média semestral inferior a 7,0 e igual ou superior a 3,0 fará Prova Institucional (PI),
@@ -60,7 +60,6 @@
                     do módulo e da nota do exame semestral dividida por dois. A média mínima para aprovação é 5,0."
                 </i>
 
-            <p>Nota Máxima: 10</p>
             </p>
 
 
